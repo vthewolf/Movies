@@ -14,11 +14,8 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.showbutton.setOnClickListener {
-            val message = binding.message.text
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-        }
-
+        // Hay que configurar el Adapter
+        binding.recycler.adapter = MoviesAdapter()
     }
 
     override fun onDestroy() {
