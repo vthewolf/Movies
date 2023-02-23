@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/cover"
@@ -18,8 +19,12 @@
         style="@style/localTextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:ellipsize="end"
         android:gravity="center"
+        android:lines="1"
         android:padding="16dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?attr/colorOnPrimary"
         tools:text="Movie Title" />
 </LinearLayout>
