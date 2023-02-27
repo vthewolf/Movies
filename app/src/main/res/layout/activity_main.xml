@@ -15,4 +15,8 @@
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:listitem="@layout/view_movie_item" />
+
+    <com.example.movies.ui.AspectRatioImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
